@@ -12,4 +12,4 @@ Validations:
 4)Existing email/mobile number
 
 
-import db.sql file in xampp/wampp or any other localhost server applications
+Create a database named "sweetalert_demo" and import db.sql file in xampp/wampp or any other localhost server applications
