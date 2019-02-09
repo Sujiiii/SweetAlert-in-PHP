@@ -86,12 +86,10 @@ if (isset($_POST['login'])) {
     $row = mysqli_fetch_array($result);
 
     if ($row['email_address'] == $email_address && $row['password'] == $hash_password)  {
-        echo "hii";
         echo '<script type="text/javascript">';
         echo 'setTimeout(function () { sweetAlert("<b>Logged In"," You have successfully loged in.</b>","success");';
         echo '}, 500);</script>';
     } else {
-        echo "hello";
         echo '<script type="text/javascript">';
         echo 'setTimeout(function () { sweetAlert("<b>Oops...","Wrong username or Password!...</b>","error");';
         echo '}, 500);</script>';
